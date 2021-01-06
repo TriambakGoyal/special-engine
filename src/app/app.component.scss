@@ -1,0 +1,76 @@
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    margin-top: 5%;
+    width: 80vw;
+    left: 10%;
+    height: 60vh;
+    // background: rgba(black, 0.66);
+    color: white;
+    position: absolute;
+    padding: 1rem;
+}
+
+.news {
+    // background: rgba(black, 0.66);
+    margin-top: 5%;
+    width: 80vw;
+    height: 60vh;
+    color: white;
+    position: absolute;
+    padding: 1rem;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.6)
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+.head {
+    display: flex;
+}
+
+@media (max-width:720px) {
+    .head {
+        display: contents;
+    }
+}
